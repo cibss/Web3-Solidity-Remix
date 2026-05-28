@@ -1,0 +1,71 @@
+{
+	"compiler": {
+		"version": "0.8.15+commit.e14f2714"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "payContract",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "payment",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/examples/ExampleStruct.sol": "Wallet2"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/examples/ExampleStruct.sol": {
+			"keccak256": "0x61c2b3327561a4f35180a2d5b6837e07f43f7ae69cae789568df32cbb3f4a2ea",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://09e08e2be24021191b1c76c9bd43631fa7a4a7917f382e4b0ce05de784160dcd",
+				"dweb:/ipfs/QmXoTCmhWs6rVARsSHfdFNejyVy6aH96ThrdDSjj8oELzW"
+			]
+		}
+	},
+	"version": 1
+}
