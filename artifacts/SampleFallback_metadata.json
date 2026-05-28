@@ -6,13 +6,25 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
+				"stateMutability": "payable",
+				"type": "fallback"
 			},
 			{
 				"inputs": [],
-				"name": "changeCounter",
+				"name": "lastFunctionCalled",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "lastValueSent",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -25,25 +37,12 @@
 			},
 			{
 				"inputs": [],
-				"name": "owner",
+				"name": "myUint",
 				"outputs": [
 					{
-						"internalType": "address",
+						"internalType": "uint256",
 						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "theMessage",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -52,15 +51,19 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string",
-						"name": "_newMessage",
-						"type": "string"
+						"internalType": "uint256",
+						"name": "_myNewUint",
+						"type": "uint256"
 					}
 				],
-				"name": "updateTheMessage",
+				"name": "setMyUint",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -76,7 +79,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/projects/BlockchainMessenger.sol": "BlockchainMessenger"
+			"contracts/examples/SampleFallback.sol": "SampleFallback"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -90,12 +93,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/projects/BlockchainMessenger.sol": {
-			"keccak256": "0x96c72c50e650a19a5923627ce6726f696c5108b1aef0ef88b78e04fb5e1aac0e",
+		"contracts/examples/SampleFallback.sol": {
+			"keccak256": "0x32b984460cbe50517980c4e9f144b094e068347f4a0ceba5d8fc2c3305a163fd",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://cfe0c17fdad86f313a658342d32e73dcb7aa2d3db72ee46b7a10e121cf3c73df",
-				"dweb:/ipfs/QmNwM4g62FSNFQG7QonbKhSPMBXe5PYeTH45Jp2SSJXirT"
+				"bzz-raw://4b08464d260ce50693c4903ea30b4392f5df22d10266b3daf42c65b062487463",
+				"dweb:/ipfs/QmNpd7N1GAtk974sYwYmZ4MhzcM5M4iwB2dURsjUTEuA9D"
 			]
 		}
 	},
