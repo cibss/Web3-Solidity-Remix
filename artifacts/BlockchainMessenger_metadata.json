@@ -1,0 +1,103 @@
+{
+	"compiler": {
+		"version": "0.8.15+commit.e14f2714"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "changeCounter",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "theMessage",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_newMessage",
+						"type": "string"
+					}
+				],
+				"name": "updateTheMessage",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/projects/BlockchainMesengger.sol": "BlockchainMessenger"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/projects/BlockchainMesengger.sol": {
+			"keccak256": "0x96c72c50e650a19a5923627ce6726f696c5108b1aef0ef88b78e04fb5e1aac0e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://cfe0c17fdad86f313a658342d32e73dcb7aa2d3db72ee46b7a10e121cf3c73df",
+				"dweb:/ipfs/QmNwM4g62FSNFQG7QonbKhSPMBXe5PYeTH45Jp2SSJXirT"
+			]
+		}
+	},
+	"version": 1
+}
